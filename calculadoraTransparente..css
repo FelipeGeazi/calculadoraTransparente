@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(img/pexels-cesar-perez-733745.jpg);
+    background-position: center;
+    background-size: 200%;
+    /*  background-repeat: no-repeat; */
+}
+
+.container {
+    /* position: relative; */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+    /* para n'ao expandir */
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+    /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); */
+}
+
+.container .calculator {
+    position: relative;
+    display: grid;
+    grid-row: span 5;
+}
+
+.container .calculator .value {
+    grid-column: span 4;
+    height: 20vh;
+    width: 80vw;
+    text-align: left;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 6em;
+    background: transparent;
+    color: #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    border-right: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.container .calculator .new {
+    grid-column: span 4;
+    height: 10vh;
+    width: 80vw;
+    text-align: left;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 2em;
+    background: transparent;
+    color: rgb(250, 250, 250);
+}
+
+.container .calculator span {
+    place-items: center;
+    display: grid;
+    height: 12vh;
+    width: 20vw;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+    cursor: pointer;
+    user-select: none;
+    /* para não selecionar o texto */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    border-right: 1px solid rgba(255, 255, 255, 0.04);
+    transition: 0.5s;
+}
+
+.container .calculator span:hover {
+    transition: 0s;
+    background: rgba(250, 45, 152, 0.5)
+}
+
+.container .calculator span:active {
+    background: white;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.container .calculator .clear {
+    grid-column: span 2;
+    width: 40vw;
+    background-color: rgba(7, 7, 7, 0.25);
+}
+
+.container .calculator .plus {
+    grid-row: span 2;
+    height: 24vh;
+    background-color: rgba(7, 7, 7, 0.15);
+}
+
+.equal {
+    background-color: rgba(247, 210, 4, 0.15);
+}

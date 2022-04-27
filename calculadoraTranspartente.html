@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Transparente 💻</title>
+    <link rel="stylesheet" href="calculadoraTransparente..css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="calculator" name="calc">
+            <input previous-display type="text" readonly class="value new" name="txt2" />
+            <input current-display type="text" readonly class="value" name="txt" />
+
+            <span class="num clear" onclick="document.calc.txt2.value = ''">AC</span>
+            <span class="num" onclick="document.calc.txt2.value +='/'">/</span>
+            <span class="num" onclick="document.calc.txt2.value +='*'">*</span>
+            <span class="num" onclick="document.calc.txt2.value +='7'">7</span>
+            <span class="num" onclick="document.calc.txt2.value +='8'">8</span>
+            <span class="num" onclick="document.calc.txt2.value +='9'">9</span>
+            <span class="num" onclick="document.calc.txt2.value +='-'">-</span>
+            <span class="num" onclick="document.calc.txt2.value +='4'">4</span>
+            <span class="num" onclick="document.calc.txt2.value +='5'">5</span>
+            <span class="num" onclick="document.calc.txt2.value +='6'">6</span>
+            <span class="num plus" onclick="document.calc.txt2.value +='+'">+</span>
+            <span class="num" onclick="document.calc.txt2.value +='1'">1</span>
+            <span class="num" onclick="document.calc.txt2.value +='2'">2</span>
+            <span class="num" onclick="document.calc.txt2.value +='3'">3</span>
+            <span class="num" onclick="document.calc.txt2.value +='0'">0</span>
+            <span class="num" onclick="document.calc.txt2.value +='00'">00</span>
+            <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+            <span class="num equal" onclick="document.calc.txt.value =  eval(calc.txt2.value)">=</span>
+
+
+
+        </form>
+    </div>
+
+    <script src=" calculadoraTransparente.js "></script>
+    <script src="calculadoraTransparenteEfeito.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".container"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2,
+        });
+    </script>
+</body>
+
+</html>
