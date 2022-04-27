@@ -27,6 +27,8 @@ body {
     backdrop-filter: blur(5px);
     border-top: 1px solid rgba(255, 255, 255, 0.25);
     border-left: 1px solid rgba(255, 255, 255, 0.35);
+    width: 80vw;
+    max-width: 600px;
     /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); */
 }
 
@@ -40,6 +42,7 @@ body {
     grid-column: span 4;
     height: 20vh;
     width: 80vw;
+    max-width: 600px;
     text-align: left;
     border: none;
     outline: none;
@@ -55,6 +58,7 @@ body {
     grid-column: span 4;
     height: 10vh;
     width: 80vw;
+    max-width: 600px;
     text-align: left;
     border: none;
     outline: none;
@@ -69,6 +73,7 @@ body {
     display: grid;
     height: 12vh;
     width: 20vw;
+    max-width: 150px;
     color: #fff;
     font-size: 2em;
     font-weight: 900;
@@ -94,6 +99,7 @@ body {
 .container .calculator .clear {
     grid-column: span 2;
     width: 40vw;
+    max-width: 300px;
     background-color: rgba(7, 7, 7, 0.25);
 }
 
