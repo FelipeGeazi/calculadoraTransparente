@@ -11,16 +11,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-image: url(img/pexels-cesar-perez-733745.jpg);
+    /*  min-height: 100vh; */
+    background-image: url(img/Post_Parceria_MB.png);
     background-position: center;
-    background-size: 200%;
+    background-size: 100%;
     /*  background-repeat: no-repeat; */
 }
 
 .container {
     /* position: relative; */
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.01);
     border-radius: 5px;
     overflow: hidden;
     /* para n'ao expandir */
@@ -29,7 +29,15 @@ body {
     border-left: 1px solid rgba(255, 255, 255, 0.35);
     width: 80vw;
     max-width: 600px;
-    /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); */
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.nomeCalc {
+    overflow: initial;
+    backdrop-filter: blur(1px);
+    color: rgb(255, 255, 255);
+    font-size: 2em;
 }
 
 .container .calculator {
@@ -47,11 +55,11 @@ body {
     border: none;
     outline: none;
     padding: 10px;
-    font-size: 6em;
+    font-size: 5em;
     background: transparent;
     color: #fff;
     border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-    border-right: 2px solid rgba(255, 255, 255, 0.15);
+    /*border-right: 0.5px solid rgba(255, 255, 255, 0.15);*/
 }
 
 .container .calculator .new {

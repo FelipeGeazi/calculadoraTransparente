@@ -9,39 +9,39 @@
     <link rel="stylesheet" href="calculadoraTransparente..css">
 </head>
 
-<body>
-    <div class="container">
+<body class="kenburns-top">
+    <fieldset class="container">
+        <legend class="nomeCalc"> Calculadora Cripto 2TM</legend>
         <form class="calculator" name="calc">
-            <input previous-display type="text" readonly class="value new" name="txt2" />
-            <input current-display type="text" readonly class="value" name="txt" />
 
-            <span class="num clear" onclick="document.calc.txt2.value = ''">AC</span>
-            <span class="num" onclick="document.calc.txt2.value +='/'">/</span>
-            <span class="num" onclick="document.calc.txt2.value +='*'">*</span>
-            <span class="num" onclick="document.calc.txt2.value +='7'">7</span>
-            <span class="num" onclick="document.calc.txt2.value +='8'">8</span>
-            <span class="num" onclick="document.calc.txt2.value +='9'">9</span>
-            <span class="num" onclick="document.calc.txt2.value +='-'">-</span>
-            <span class="num" onclick="document.calc.txt2.value +='4'">4</span>
-            <span class="num" onclick="document.calc.txt2.value +='5'">5</span>
-            <span class="num" onclick="document.calc.txt2.value +='6'">6</span>
-            <span class="num plus" onclick="document.calc.txt2.value +='+'">+</span>
-            <span class="num" onclick="document.calc.txt2.value +='1'">1</span>
-            <span class="num" onclick="document.calc.txt2.value +='2'">2</span>
-            <span class="num" onclick="document.calc.txt2.value +='3'">3</span>
-            <span class="num" onclick="document.calc.txt2.value +='0'">0</span>
-            <span class="num" onclick="document.calc.txt2.value +='00'">00</span>
-            <span class="num" onclick="document.calc.txt.value +='.'">.</span>
-            <span class="num equal" onclick="document.calc.txt.value =  eval(calc.txt2.value)">=</span>
+            <div data-previous-operand class="value new"></div>
+            <div data-current-operand class="value"></div>
+
+            <span data-all-clear class="num clear">AC</span>
+            <span data-operator class="num">÷</span>
+            <span data-operator class="num">x</span>
+            <span data-number class="num">7</span>
+            <span data-number class="num">8</span>
+            <span data-number class="num">9</span>
+            <span data-operator class="num">-</span>
+            <span data-number class="num">4</span>
+            <span data-number class="num">5</span>
+            <span data-number class="num">6</span>
+            <span data-operator class="num plus">+</span>
+            <span data-number class="num">1</span>
+            <span data-number class="num">2</span>
+            <span data-number class="num">3</span>
+            <span data-number class="num">0</span>
+            <span data-number class="num">00</span>
+            <span data-number class="num">.</span>
+            <span data-equals class="num equal">=</span>
 
 
 
         </form>
-    </div>
+    </fieldset>
 
     <script src=" calculadoraTransparente.js "></script>
-
-
 </body>
 
 </html>
