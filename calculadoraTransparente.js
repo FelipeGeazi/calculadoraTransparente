@@ -47,7 +47,7 @@ class Calculator {
 
     calculate() {
         let result;
-        let historico
+        /* let historico = "" */
 
         const _previousOperand = parseFloat(this.previousOperand);
         const _currentOperand = parseFloat(this.currentOperand);
@@ -57,21 +57,21 @@ class Calculator {
         switch (this.operation) {
             case "+":
                 result = _previousOperand + _currentOperand;
-                historico += _previousOperand + _currentOperand
+                /* historico += _previousOperand + _currentOperand */
                 window.prompt(`O resultado do Histórico da Calculadora:`, `${_previousOperand} + ${_currentOperand} = ${result} `)
                 break;
             case "-":
                 result = _previousOperand - _currentOperand;
                 //alert (`${_previousOperand} - ${_currentOperand} = ${result} `)
 
-                historico += (`${_previousOperand} - ${_currentOperand}`)
+                /* historico += (`${_previousOperand} - ${_currentOperand}`) */
                 window.prompt(`O resultado do Histórico da Calculadora:`, `${_previousOperand} - ${_currentOperand} = ${result} `)
                 break;
             case "÷":
                 result = _previousOperand / _currentOperand;
                 //alert(` ${_previousOperand} ÷ ${_currentOperand} = ${result} `)
 
-                historico += (`${_previousOperand} ÷ ${_currentOperand}`)
+                /* historico += (`${_previousOperand} ÷ ${_currentOperand}`) */
                 window.prompt(`O resultado do Histórico da Calculadora:`, `${_previousOperand} ÷ ${_currentOperand} = ${result} `)
 
                 break;
@@ -79,7 +79,7 @@ class Calculator {
                 result = _previousOperand * _currentOperand;
                 //alert(`${_previousOperand} x ${_currentOperand} = ${result} `)
 
-                historico += (`${_previousOperand} x ${_currentOperand}`)
+                /* historico += (`${_previousOperand} x ${_currentOperand}`) */
                 window.prompt(`O resultado do Histórico da Calculadora:`, `${_previousOperand} x ${_currentOperand} = ${result} `)
                 break;
             default:
